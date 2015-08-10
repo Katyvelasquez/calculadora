@@ -1,0 +1,76 @@
+<html>
+	<head>
+
+		<meta charset="utf8">
+		<title>calculadora</title>
+		<link rel="stylesheet" type="text/css" href="calculadora.css">
+		<script type="text/javascript" src="scriptt.js"></script>
+		<style>
+		input[type=button],input[type="text"]{
+			width: 100%;
+			height: 100%;
+			font-size: 30px;
+		}
+
+		table,form{
+			width: 500px;
+			height: 400px;
+			margin:  0 auto;
+		}
+		</style>
+		</head>
+
+		<body>
+			<form name="fo">
+
+			<h1>calculadora</h1>
+
+			<table>
+			<tr>
+				<td colspan="5"><input type="text" name"valores" id="valores" onkeypress="return solonumeros(event)"></td>
+				</tr> 
+			<tr>
+				<td><input type="button" value="7" onclick="retornar(value)"></td>
+				<td><input type="button" value="8" onclick="retornar(value)"></td>
+				<td><input type="button" value="9" onclick="retornar(value)"></td>
+				<td><input type="button" value="+" onclick="signo(value)"></td>
+				<td><input type="button" value="-" onclick="signo(value)"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="4" onclick="retornar(value)"></td>
+				<td><input type="button" value="5" onclick="retornar(value)"></td>
+				<td><input type="button" value="6" onclick="retornar(value)"></td>
+				<td><input type="button" value="*" onclick="signo(value)"></td>
+				<td><input type="button" value="/" onclick="signo(value)"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="1" onclick="retornar(value)"></td>
+				<td><input type="button" value="2" onclick="retornar(value)"></td>
+				<td><input type="button" value="3" onclick="retornar(value)"></td>
+				<td><input type="button" value="<-" onclick="signo(value)"></td>
+				<td><input type="button" value="C" onclick="signo(value)"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="button" value="0" onclick="retornar()"></td>
+				<td>></td>
+				<td colspan="2"><input type="button" value="=" onclick="calcular()"></td>
+				
+			</tr>
+
+
+
+
+
+
+			</table>
+
+
+
+			</form>
+
+		</body>
+	</html>
+
